@@ -54,7 +54,7 @@ operations = {
 }
 
 print("*" * 35)
-print("\tAdvanced Calculator")
+print("\tCalculator")
 print("*" * 35)
 
 while True:
