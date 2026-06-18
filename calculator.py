@@ -40,8 +40,8 @@ if choice > 4:
     print("Invalid input!")
 else:
     # Get numbers from the user
-    num1 = int(input("Enter value of first number: "))
-    num2 = int(input("Enter value of second number: "))
+    num1 = float(input("Enter value of first number: "))
+    num2 = float(input("Enter value of second number: "))
 
     # Perform the selected operation
     match choice:
