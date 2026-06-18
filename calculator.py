@@ -1,21 +1,23 @@
 # Function to add two numbers
 def addition(num1, num2):
-    print(num1 + num2)
+    return num1 + num2
 
 
 # Function to subtract two numbers
 def subtraction(num1, num2):
-    print(num1 - num2)
+    return num1 - num2
 
 
 # Function to multiply two numbers
 def multiplication(num1, num2):
-    print(num1 * num2)
+    return num1 * num2
 
 
 # Function to divide two numbers
 def division(num1, num2):
-    print(num1 / num2)
+    if num2 == 0:
+        return "Cannot divide by zero!"
+    return num1 / num2
 
 
 # Display calculator heading
@@ -44,13 +46,13 @@ else:
     # Perform the selected operation
     match choice:
         case 1:
-            addition(num1, num2)
+            print("Result:", addition(num1, num2))
         case 2:
-            subtraction(num1, num2)
+            print("Result:", subtraction(num1, num2))
         case 3:
-            multiplication(num1, num2)
+            print("Result:", multiplication(num1, num2))
         case 4:
-            division(num1, num2)
+            print("Result:", division(num1, num2))
 
 # Display closing message
 print("\nThanks for using!")
