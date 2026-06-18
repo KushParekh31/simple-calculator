@@ -103,9 +103,9 @@ while True:
     symbol, operation = operations[choice]
     result = operation(num1, num2)
 
-    expression = f"{num1} {symbol} {num2} = {result}"
+    expression = f"{num1:.2f} {symbol} {num2:.2f} = {result:.2f}"
 
-    print("\nResult:")
+    print("\nResult:", end=" ")
     print(expression)
 
     history.append(expression)
